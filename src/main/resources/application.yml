@@ -1,0 +1,9 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  rsocket:
+    server:
+      mapping-path: /tweetsocket
+      transport: websocket
+    

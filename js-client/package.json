@@ -1,0 +1,24 @@
+{
+  "name": "rsocket-demo",
+  "private": true,
+  "description": "RSocket Demo",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsibilio/rsocket-demo.git"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "fbjs": "^0.8.12",
+    "rsocket-core": "^0.0.10",
+    "rsocket-flowable": "^0.0.10",
+    "rsocket-tcp-server": "^0.0.10",
+    "rsocket-types": "^0.0.10",
+    "rsocket-websocket-client": "^0.0.10",
+    "rsocket-websocket-server": "^0.0.10",
+    "ws": "^5.2.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
