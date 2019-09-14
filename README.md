@@ -16,6 +16,8 @@ The *Java backend* exposes the following **APIs**:
 
 The *Javascript client* can be used by requesting [http://localhost/rsocket/index.html](http://localhost/rsocket/index.html)
 
+**the possible* `{author}` *values are* `linustorvalds`*,* `robertmartin`*,* `martinfowler`*.*
+
 ### Quickstart
 
 **1.** Spin up the *backend* by running: `mvn spring-boot:run`
