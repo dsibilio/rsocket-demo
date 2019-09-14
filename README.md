@@ -23,7 +23,7 @@ The *Javascript client* can be used by requesting [http://localhost/rsocket/inde
 **1.** Spin up the *backend* by running: `mvn spring-boot:run`
 
 **2.** Deploy the *front end* locally (steps for **nginx**):
-- copy `js-client/index.html` and `js-client/index.js` to nginx root directory + `rsocket` (eg. `/usr/share/nginx/html/rsocket/`)
+- copy `js-client/index.html` and `js-client/app.js` to nginx root directory + `rsocket` (eg. `/usr/share/nginx/html/rsocket/`)
 - start nginx: `systemctl start nginx`
 
 ### Reference Documentation
