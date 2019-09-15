@@ -19,7 +19,6 @@ public class RedisServerConfiguration {
     
     @PostConstruct
     public void init() {
-        redisServer.stop();
         redisServer.start();
     }
     
