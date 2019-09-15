@@ -1,6 +1,7 @@
 package it.dsibilio.rsocketdemo.api.rest;
 
 import it.dsibilio.rsocketdemo.domain.Tweet;
+import it.dsibilio.rsocketdemo.domain.TweetRequest;
 import it.dsibilio.rsocketdemo.service.TweetService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -29,7 +30,7 @@ public class TweetController {
 
     @GetMapping(value = "/socket/{author}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Tweet> getByAuthorViaSocket(@PathVariable String author) {
-        return requester.flatMapMany(r -> r.route("tweets.by.author").data(author).retrieveFlux(Tweet.class));
+        return requester.flatMapMany(r -> r.route("tweets.by.author").data(new TweetRequest(author)).retrieveFlux(Tweet.class));
     }
 
 }

@@ -1,6 +1,6 @@
 local:
   server:
-    port: 8080
+    port: 9090
 spring:
   redis:
     host: localhost

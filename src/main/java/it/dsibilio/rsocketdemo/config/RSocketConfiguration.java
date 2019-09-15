@@ -2,8 +2,8 @@ package it.dsibilio.rsocketdemo.config;
 
 import reactor.core.publisher.Mono;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.rsocket.RSocketProperties;
+import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.rsocket.RSocketRequester;
@@ -13,7 +13,7 @@ import java.net.URI;
 
 @Configuration
 public class RSocketConfiguration {
-    @Value("${server.port:8080}")
+    @LocalServerPort
     private int port;
 
     @Bean
