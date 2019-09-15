@@ -77,7 +77,7 @@ function main() {
           reloadMessages(payload.data);
         },
         onSubscribe: subscription => {
-          subscription.request(100);
+          subscription.request(2147483647);
         },
       });
     },
