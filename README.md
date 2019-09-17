@@ -1,6 +1,6 @@
 # Getting Started
 
-### What's this?
+## What's this?
 
 A Spring Boot 2.2 reactive application to be used as an RSocket demo, including the following features:
 
@@ -18,11 +18,17 @@ The *Javascript client* can be used by requesting [http://localhost:8080/index.h
 
 **the possible* `{author}` *values are* `linustorvalds`*,* `robertmartin`*,* `martinfowler`*.*
 
-### Quickstart
+## Quickstart
 
 Spin up both the *backend* and the *frontend* by running: `mvn spring-boot:run`
 
-### Reference Documentation
+### Running with Docker
+
+...or if you want, you can run the app within docker by running: `docker-compose up`
+
+*(this will use a dockerized Redis server rather than embedded Redis!)*
+
+## Reference Documentation
 For further reference, please consider the following resources:
 
 * [More about RSocket](http://rsocket.io/)

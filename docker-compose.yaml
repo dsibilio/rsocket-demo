@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  rsocket-demo:
+    container_name: "rsocket-demo"
+    network_mode: host
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+  redis:
+    container_name: "redis"
+    image: "redis:5.0.5"
+    ports:
+      - "6379:6379"
