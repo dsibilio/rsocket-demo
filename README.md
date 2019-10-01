@@ -20,7 +20,10 @@ The *Javascript client* can be used by requesting [http://localhost:8080/index.h
 
 ## Quickstart
 
-Spin up both the *backend* and the *frontend* by running: `mvn spring-boot:run`
+Spin up both the *backend* and the *frontend* by running: `mvn spring-boot:run`.
+
+> **NOTE:** when started this way, the demo will try to run an Embedded Redis Server instance on the specified port.
+If a Redis Server instance is already running on your machine you can either *a)* change the specified redis port in the [application.yml](src/main/resources/application.yml) file, or *b)* run the demo with the prod profile enabled, which disables the Embedded Redis Server (eg. `mvn spring-boot:run -Dspring-boot.run.profiles=prod`).
 
 ### Running with Docker
 
