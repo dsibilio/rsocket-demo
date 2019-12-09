@@ -1,8 +1,8 @@
-package it.dsibilio.rsocketdemo.api.rsocket;
+package it.dsibilio.rsocketdemo.tweets.controller.rsocket;
 
-import it.dsibilio.rsocketdemo.domain.Tweet;
-import it.dsibilio.rsocketdemo.domain.TweetRequest;
-import it.dsibilio.rsocketdemo.service.TweetService;
+import it.dsibilio.rsocketdemo.tweets.domain.Tweet;
+import it.dsibilio.rsocketdemo.tweets.domain.TweetRequest;
+import it.dsibilio.rsocketdemo.tweets.service.TweetService;
 import reactor.core.publisher.Flux;
 
 import org.springframework.messaging.handler.annotation.MessageMapping;

@@ -1,4 +1,4 @@
-package it.dsibilio.rsocketdemo.domain;
+package it.dsibilio.rsocketdemo.tweets.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;

@@ -1,6 +1,6 @@
-package it.dsibilio.rsocketdemo.repository;
+package it.dsibilio.rsocketdemo.tweets.repository;
 
-import it.dsibilio.rsocketdemo.domain.Tweet;
+import it.dsibilio.rsocketdemo.tweets.domain.Tweet;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

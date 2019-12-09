@@ -1,6 +1,6 @@
 package it.dsibilio.rsocketdemo.config;
 
-import it.dsibilio.rsocketdemo.domain.Tweet;
+import it.dsibilio.rsocketdemo.tweets.domain.Tweet;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

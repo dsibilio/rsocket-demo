@@ -1,7 +1,7 @@
-package it.dsibilio.rsocketdemo.service;
+package it.dsibilio.rsocketdemo.tweets.service;
 
-import it.dsibilio.rsocketdemo.domain.Tweet;
-import it.dsibilio.rsocketdemo.repository.TweetRepository;
+import it.dsibilio.rsocketdemo.tweets.domain.Tweet;
+import it.dsibilio.rsocketdemo.tweets.repository.TweetRepository;
 import reactor.core.publisher.Flux;
 
 import org.springframework.stereotype.Service;

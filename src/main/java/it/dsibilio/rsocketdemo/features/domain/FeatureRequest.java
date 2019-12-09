@@ -1,11 +1,11 @@
-package it.dsibilio.rsocketdemo.domain;
+package it.dsibilio.rsocketdemo.features.domain;
 
-public class TweetRequest {
+public class FeatureRequest {
     private String author;
     
-    public TweetRequest() {}
+    public FeatureRequest() {}
 
-    public TweetRequest(String author) {
+    public FeatureRequest(String author) {
         this.author = author;
     }
 
