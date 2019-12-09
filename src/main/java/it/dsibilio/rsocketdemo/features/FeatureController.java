@@ -5,6 +5,7 @@ import org.geojson.Feature;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;
 import reactor.core.publisher.Flux;
+import java.time.Duration;
 
 @Controller
 public class FeatureController {
@@ -17,7 +18,7 @@ public class FeatureController {
 
     @MessageMapping("traveltime-message")
     public Flux<Feature> getRoadSubscription() {
-        return service.getFeatureSubscription();
+        return service.getFeatureSubscription().delayElements(Duration.ofMillis(500));
     }
 
 }
