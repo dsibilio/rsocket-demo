@@ -4,20 +4,40 @@ import java.time.Instant;
 
 public class RSocketMessage
 {
-    private String message;
+    private String origin;
+    private long index;
+    private String interaction;
     private long created = Instant.now().getEpochSecond();
 
-    public RSocketMessage(String message)
-    {
-        this.message = message;
+    public RSocketMessage() {
     }
 
-    public String getMessage() {
-        return message;
+    public RSocketMessage(String origin, String interaction, long index) {
+        this.origin = origin;
+        this.interaction = interaction;
+        this.index = index;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public RSocketMessage(String origin, String interaction) {
+        this.origin = origin;
+        this.interaction = interaction;
+        this.index = 0;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public String getInteraction() {
+        return interaction;
+    }
+
+    public void setInteraction(String interaction) {
+        this.interaction = interaction;
     }
 
     public long getCreated() {
@@ -31,7 +51,8 @@ public class RSocketMessage
     @Override
     public String toString() {
         return "RSocketMessage{" +
-                "message='" + message + '\'' +
+                "origin='" + origin + '\'' +
+                ", interaction='" + interaction + '\'' +
                 ", created=" + created +
                 '}';
     }
