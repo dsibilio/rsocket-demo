@@ -1,9 +1,0 @@
--- Below is the old request from the tutorial
-
- --debug --request --data "{\"origin\":\"Client\",\"interaction\":\"Request\"}" --route request-response tcp://localhost:7000
-
---
-"{\"\"\"origin\"\"\":\"\"\"Client\"\"\",\"\"\"interaction\"\"\":\"\"\"Request\"\"\"}"
---
-
-tcp://localhost:7000 --request --route request-response --debug -d "{\"\"\"origin\"\"\":\"\"\"Client\"\"\",\"\"\"interaction\"\"\":\"\"\"Request\"\"\"}"
