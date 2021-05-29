@@ -16,7 +16,7 @@
     "rsocket-types": "^0.0.10",
     "rsocket-websocket-client": "^0.0.10",
     "rsocket-websocket-server": "^0.0.10",
-    "ws": "^5.2.1"
+    "ws": "^7.4.6"
   },
   "scripts": {
     "start": "node index.js"
